@@ -1,0 +1,7 @@
+version: "2"
+services:
+  chat:
+    build:
+      context: .
+    ports:
+      - 3000:3000
