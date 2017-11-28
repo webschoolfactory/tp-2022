@@ -20,3 +20,61 @@ on website load.
 - Users can type chat messages to the chat room.
 - A notification is sent to all users when a user joins or leaves
 the chatroom.
+
+
+ Loïc Calvy
+ *
+ *
+
+ PaulWSF
+ *
+ *
+
+ pierrelh
+ *
+ *
+
+ louisl98
+ *
+ *
+
+ Nicolas Resmi  NicolasResmi
+ *
+ *
+
+ maximeschneider1
+ *
+ *
+
+ AlexisVH97
+ *
+ *
+
+ RayanBassetti
+ *
+ *
+
+ Cyrille Guiot-Guillin  CyrilleGG
+ *
+ *
+
+ EveWSF
+ *
+ *
+
+ Maxime Groff  Ludion33
+ *
+ *
+
+ MathieuCeren
+ *
+ *
+
+ EmmaSalvi
+ *
+ *
+
+ AdleySlbi
+ *
+ *
+
