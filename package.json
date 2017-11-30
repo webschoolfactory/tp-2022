@@ -14,15 +14,19 @@
     "start": "node index.js",
     "start:docker": "docker-compose up",
     "start:docker:dev": "docker-compose up --build",
-    "test": "npm run test:lint && npm run test:spec",
+    "test": "npm run test:lint && npm run test:cover",
     "test:lint": "eslint public index.js chat.js",
     "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\"",
+    "test:cover": "istanbul cover _mocha -- \"./test/spec/**/*spec.js\"",
     "test:lint:docker": "docker exec -it tp2021_chat_1 npm test:lint",
-    "test:docker": "docker exec -it tp2021_chat_1 npm test"
+    "test:docker": "docker exec -it tp2021_chat_1 npm test",
+    "cover:publish": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "devDependencies": {
     "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
+    "coveralls": "^3.0.0",
     "eslint": "^3.13.1",
+    "istanbul": "^0.4.5",
     "mocha": "^4.0.1"
   }
 }
