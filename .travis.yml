@@ -1,5 +1,22 @@
 language: node_js
 node_js:
 - '8.9.1'
+sudo: required
+services:
+  - docker
+env:
+  DOCKER_COMPOSE_VERSION: 1.10.0
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+install:
+  - npm i
+before_script:
+  - docker-compose up -d
+script:
+  - npm test
+  - npm run test:e2e
 after_success:
   - npm run cover:publish

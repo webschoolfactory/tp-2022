@@ -1,0 +1,7 @@
+{
+  "globals": {
+      "describe": true,
+      "myChromeBrowser": true,
+      "myFirefoxBrowser": true
+      }
+}

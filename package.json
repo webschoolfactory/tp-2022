@@ -18,6 +18,7 @@
     "test:lint": "eslint public index.js chat.js",
     "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\"",
     "test:cover": "istanbul cover node_modules/mocha/bin/_mocha -- \"./test/spec/**/*spec.js\"",
+    "test:e2e": "./node_modules/.bin/wdio",
     "test:lint:docker": "docker exec -it tp2021_chat_1 npm test:lint",
     "test:docker": "docker exec -it tp2021_chat_1 npm test",
     "cover:publish": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
@@ -27,6 +28,10 @@
     "coveralls": "^3.0.0",
     "eslint": "^3.13.1",
     "istanbul": "^0.4.5",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-sauce-service": "^0.3.1",
+    "wdio-spec-reporter": "0.0.5",
+    "webdriverio": "^4.9.11"
   }
 }
