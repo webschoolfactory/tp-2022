@@ -24,10 +24,12 @@ the chatroom.
 
  Loïc Calvy
  *
+ ![Loic Calvy](public/loic-calvy.png)
  *
 
  PaulWSF
  *
+ ![Paul Bréard](public/paul.png)
  *
 
  pierrelh
@@ -36,10 +38,13 @@ the chatroom.
 
  louisl98
  *
+ ![Louis Laugier](public/Louis.jpg)
+
  *
 
  Nicolas Resmi  NicolasResmi
  *
+ ![Nicolas Resmi](public/NicolasR.png)
  *
 
  maximeschneider1
@@ -48,6 +53,7 @@ the chatroom.
 
  AlexisVH97
  *
+ ![Alexis VAN HOORDE](public/Alexis_VanHoorde.jpg)
  *
 
  RayanBassetti
@@ -56,25 +62,30 @@ the chatroom.
 
  Cyrille Guiot-Guillin  CyrilleGG
  *
+ ![Cyrille Guiot-Guillin](public/cyrille.jpg)
  *
 
  EveWSF
  *
+ ![EveWSF](public/EveDG.JPG)
  *
 
  Maxime Groff  Ludion33
  *
+ ![MaximeGroff](public/maxime_groff.png)
  *
 
  MathieuCeren
  *
+  ![Mathieu Ceren](public/mathieuc.jpg)
  *
 
  EmmaSalvi
  *
+ ![Emma SALVI](public/SALVI-Emma.jpg)
  *
 
  AdleySlbi
  *
+ ![Adley Salabi](public/SalabiAdleyPetit.jpg)
  *
-
