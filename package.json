@@ -13,13 +13,16 @@
   "scripts": {
     "start": "node index.js",
     "start:docker": "docker-compose up",
-    "test": "npm run test:lint",
+    "start:docker:dev": "docker-compose up --build",
+    "test": "npm run test:lint && npm run test:spec",
     "test:lint": "eslint public index.js chat.js",
+    "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\"",
     "test:lint:docker": "docker exec -it tp2021_chat_1 npm test:lint",
     "test:docker": "docker exec -it tp2021_chat_1 npm test"
   },
   "devDependencies": {
     "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
-    "eslint": "^3.13.1"
+    "eslint": "^3.13.1",
+    "mocha": "^4.0.1"
   }
 }
