@@ -13,6 +13,13 @@
   "scripts": {
     "start": "node index.js",
     "start:docker": "docker-compose up",
-    "test" :"echo 'no test noobs'; exit 1"
+    "test": "npm run test:lint",
+    "test:lint": "eslint public index.js chat.js",
+    "test:lint:docker": "docker exec -it tp2021_chat_1 npm test:lint",
+    "test:docker": "docker exec -it tp2021_chat_1 npm test"
+  },
+  "devDependencies": {
+    "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
+    "eslint": "^3.13.1"
   }
 }
