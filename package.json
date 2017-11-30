@@ -12,6 +12,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "start:docker": "docker-compose up"
+    "start:docker": "docker-compose up",
+    "test" :"echo 'no test noobs'; exit 1"
   }
 }
