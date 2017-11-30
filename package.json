@@ -7,8 +7,11 @@
   "private": true,
   "license": "BSD",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "express": "4.13.4",
-    "socket.io": "^1.7.2"
+    "redis": "^2.6.5",
+    "socket.io": "^1.7.2",
+    "socket.io-redis": "^3.1.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -16,8 +19,8 @@
     "start:docker:dev": "docker-compose up --build",
     "test": "npm run test:lint && npm run test:cover",
     "test:lint": "eslint public index.js chat.js",
-    "test:spec": "mocha -R spec \"./test/spec/**/*spec.js\"",
-    "test:cover": "istanbul cover node_modules/mocha/bin/_mocha -- \"./test/spec/**/*spec.js\"",
+    "test:spec": "mocha --exit -R spec \"./test/spec/**/*spec.js\"",
+    "test:cover": "istanbul cover node_modules/mocha/bin/_mocha -- --exit \"./test/spec/**/*spec.js\"",
     "test:e2e": "./node_modules/.bin/wdio",
     "test:lint:docker": "docker exec -it tp2021_chat_1 npm test:lint",
     "test:docker": "docker exec -it tp2021_chat_1 npm test",
