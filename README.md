@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/webschoolfactory/tp-2021.svg?branch=master)](https://travis-ci.org/webschoolfactory/tp-2021)
 # Socket.IO Chat
 
 A simple chat demo for socket.io
