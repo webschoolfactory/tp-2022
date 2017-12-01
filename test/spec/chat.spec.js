@@ -53,7 +53,19 @@ describe('chat', function() {
   });
 
   it('should stop typing', function(done) {
-    done(new Error('not tested'));
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          assert.deepEqual(type, 'stop typing');
+          assert.deepEqual(msg, {
+            username: socket.username
+          });
+          done();
+        }
+      }
+    };
+    const stopTyping = chat.stopTyping(socket);
+    stopTyping();
   });
 
   it('should show disconnect', function(done) {
