@@ -37,12 +37,26 @@ describe('chat', function() {
   });
 
   it('should show disconnect', function(done) {
-    done(new Error('not tested'));
-  });
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          assert.deepEqual(type, 'user left');
+          assert.deepEqual(msg, {
+            username: 'loic',
+            numUsers: '-1'
+          });
+          done();
+        }
+      }
+      };
+      socket.addedUser = true;
+      socket.username = 'loic';
+      socket.numUsers = 1;
+      const newMessage = chat.disconnect(socket);
+      newMessage('-1');
+    });
 
   it('should show not disconnect', function(done) {
     done(new Error('not tested'));
   });
 });
-
-
