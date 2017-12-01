@@ -2,6 +2,10 @@ const assert = require('assert');
 const chat = require('../../chat');
 
 describe('chat', function() {
+  beforeEach(function() {
+    chat.clearUsers();
+  });
+
   it('should broadcast new message', function(done) {
     const socket = {
       broadcast: {

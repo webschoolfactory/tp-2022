@@ -8,6 +8,10 @@ const newMessage = socket => data => {
   });
 };
 
+const clearUsers = () => {
+  numUsers = 0;
+};
+
 // when the client emits 'add user', this listens and executes
 const addUser = socket => username => {
   if (socket.addedUser) return;
@@ -59,3 +63,4 @@ exports.addUser = addUser;
 exports.typing = typing;
 exports.stopTyping = stopTyping;
 exports.disconnect = disconnect;
+exports.clearUsers = clearUsers;
