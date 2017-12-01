@@ -25,7 +25,27 @@ describe('chat', function() {
   });
 
   it('should add new user', function(done) {
-    done(new Error('not tested'));
+    const socket = {
+        emit: function(type, msg) {
+            assert.deepEqual(type, 'login');
+            assert.deepEqual(msg, {
+                numUsers: 1
+            });
+        },
+        broadcast: {
+            emit: function(type, msg) {
+                assert.deepEqual(type, 'user joined');
+                assert.deepEqual(msg, {
+                    username: 'yolo',
+                    numUsers: 1
+                });
+                done();
+            }
+        }
+    };
+    socket.username = 'yolo';
+    const addUser = chat.addUser(socket);
+    addUser('yolo');
   });
 
   it('should not add user', function(done) {
