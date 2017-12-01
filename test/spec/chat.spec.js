@@ -21,7 +21,20 @@ describe('chat', function() {
   });
 
   it('should show typing', function(done) {
-      done(new Error('not tested'));
+    const socket = {
+      broadcast: {
+        emit: function(type, data) {
+          assert.deepEqual(type, 'typing');
+          assert.deepEqual(data, {
+            username: 'loic'
+          });
+          done();
+        }
+      }
+    };
+    socket.username = 'loic';
+    const typing = chat.typing(socket);
+    typing('loic');
   });
 
   it('should add new user', function(done) {
