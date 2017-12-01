@@ -62,7 +62,15 @@ describe('chat', function() {
   });
 
   it('should not add user', function(done) {
-    done(new Error('not tested'));
+    const socket = {
+      emit: function(type, msg) {
+        done(new Error('should not occured'));
+      }
+    };
+    socket.addedUser = true;
+    const addUser = chat.addUser(socket);
+    addUser();
+    done();
   });
 
   it('should stop typing', function(done) {
@@ -102,6 +110,16 @@ describe('chat', function() {
     });
 
   it('should show not disconnect', function(done) {
-    done(new Error('not tested'));
+    const socket = {
+      broadcast: {
+        emit: function(type, msg) {
+          done(new Error('should not occured'));
+        }
+      }
+    };
+    socket.addedUser = false;
+    const disconnect = chat.disconnect(socket);
+    disconnect();
+    done();
   });
 });
