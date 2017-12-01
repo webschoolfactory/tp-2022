@@ -19,7 +19,8 @@ server.listen(port, function() {
 app.use(express.static(__dirname + '/public'));
 
 // Chatroom
-const adapter = redis({ host: process.env.REDIS_HOST || 'localhost', port: 6379 });
+const adapter = process.env.REDIS_URL ? redis({url: process.env.REDIS_URL}) :
+  redis({ host: process.env.REDIS_HOST || 'localhost', port: 6379 });
 io.adapter(adapter);
 
 bluebird.promisifyAll(adapter.pubClient);
