@@ -16,7 +16,7 @@
   "scripts": {
     "start": "node index.js",
     "start:docker": "docker-compose up",
-    "start:docker:dev": "docker-compose up --build",
+    "start:docker:dev": "npm i && docker-compose up --build",
     "test": "npm run test:lint && npm run test:cover",
     "test:lint": "eslint public index.js chat.js",
     "test:spec": "mocha --exit -R spec \"./test/spec/**/*spec.js\"",
