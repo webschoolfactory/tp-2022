@@ -17,6 +17,7 @@
     .then(function(_numUsers) {
       var numUsers = _numUsers;
         ++numUsers;
+        console.log('one more user connected', `username=${username}`, `numUsers=${numUsers}`);
         socket.addedUser = true;
         socket.emit('login', {
           numUsers: numUsers
@@ -51,6 +52,7 @@
       .then(function(_numUsers) {
         var numUsers = _numUsers;
         --numUsers;
+        console.log('one user disconnected', `username=${socket.username}`, `numUsers=${numUsers}`);
         // echo globally that this client has left
         socket.broadcast.emit('user left', {
           username: socket.username,
