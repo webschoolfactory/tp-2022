@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/webschoolfactory/tp-2021.svg?branch=master)](https://travis-ci.org/webschoolfactory/tp-2021)
+[![Build Status](https://travis-ci.org/webschoolfactory/tp-2022.svg?branch=master)](https://travis-ci.org/webschoolfactory/tp-2022)
 # Socket.IO Chat
 
 A simple chat demo for socket.io
@@ -6,7 +6,7 @@ A simple chat demo for socket.io
 ## How to use
 
 ```
-$ cd tp-2021
+$ cd tp-2022
 $ npm run start:docker
 ```
 

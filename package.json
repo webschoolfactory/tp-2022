@@ -7,9 +7,9 @@
   "private": true,
   "license": "BSD",
   "dependencies": {
-    "bluebird": "^3.4.7",
-    "express": "4.13.4",
-    "redis": "^2.6.5",
+    "bluebird": "^3.5.3",
+    "express": "^4.16.4",
+    "redis": "^2.8.0",
     "socket.io": "^1.7.2",
     "socket.io-redis": "^3.1.0"
   },
@@ -28,13 +28,13 @@
   },
   "devDependencies": {
     "@coorpacademy/eslint-plugin-coorpacademy": "^3.0.2",
-    "coveralls": "^3.0.0",
-    "eslint": "^3.13.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.5",
-    "mocha": "^4.0.1",
-    "wdio-mocha-framework": "^0.5.8",
-    "wdio-sauce-service": "^0.3.1",
+    "mocha": "^4.1.0",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-sauce-service": "^0.4.13",
     "wdio-spec-reporter": "0.0.5",
-    "webdriverio": "^4.9.11"
+    "webdriverio": "^4.14.0"
   }
 }
