@@ -23,3 +23,6 @@ the chatroom.
 
 Loïc Calvy
 !(./images/loic-calvy.jpeg)
+
+Sylvan Lavallee
+!(./images/212221386YHYTDhI.gif)
