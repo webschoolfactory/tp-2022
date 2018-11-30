@@ -23,3 +23,42 @@ the chatroom.
 
 Loïc Calvy
 !(./images/loic-calvy.jpeg)
+
+Manon Jourdain [15 h 54]
+
+
+Paul Boursy [15 h 54]
+
+
+Aurore [15 h 54]
+
+
+Sylvan [15 h 54]
+
+
+Lolo [15 h 55]
+
+
+Barth [15 h 55]
+
+
+Dorothée Delaunay [15 h 55]
+
+
+Gabriel Eliade [15 h 55]
+
+
+Paul Le Flanchec [15 h 55]
+
+
+TLP [15 h 55]
+
+
+Alexandre [15 h 55]
+
+
+Clément Legrand [15 h 56]
+
+
+Timothée Gaultier [15 h 57]
+
